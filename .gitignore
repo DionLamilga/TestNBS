@@ -1,0 +1,23 @@
+# CocoaPods
+Podfile
+Podfile.lock
+Pods/
+
+# Xcode
+TestNBS.xcodeproj/
+TestNBS.xcworkspace/
+TestNBS/
+
+# Xcode project files
+*.xcuserstate
+*.xcuserdata/
+*.xccheckout
+*.xcschemes/
+*.xcuserdatad/
+
+# Project directories
+project/
+
+# Build artifacts
+build/
+DerivedData/
