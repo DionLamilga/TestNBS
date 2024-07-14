@@ -1,13 +1,3 @@
-# CocoaPods
-Podfile
-Podfile.lock
-Pods/
-
-# Xcode
-TestNBS.xcodeproj/
-TestNBS.xcworkspace/
-TestNBS/
-
 # Xcode project files
 *.xcuserstate
 *.xcuserdata/
