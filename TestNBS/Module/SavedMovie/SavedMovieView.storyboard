@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Saved Movie View-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SavedMovieView" id="Y6W-OH-hqX" customClass="SavedMovieView" customModule="TestNBS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ue-Su-j2r" customClass="Header" customModule="TestNBS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="59" width="393" height="56"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="RTz-Jm-p9T"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="URe-Bq-l4V">
+                                <rect key="frame" x="0.0" y="115" width="393" height="703"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3ic-h3-7xi">
+                                        <rect key="frame" x="20" y="20" width="353" height="683"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.14509803921568626" green="0.15294117647058825" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="3ic-h3-7xi" secondAttribute="bottom" id="6e6-De-ibe"/>
+                                    <constraint firstItem="3ic-h3-7xi" firstAttribute="leading" secondItem="URe-Bq-l4V" secondAttribute="leading" constant="20" id="Y7E-xe-j8j"/>
+                                    <constraint firstAttribute="trailing" secondItem="3ic-h3-7xi" secondAttribute="trailing" constant="20" id="Yin-4N-m8B"/>
+                                    <constraint firstItem="3ic-h3-7xi" firstAttribute="top" secondItem="URe-Bq-l4V" secondAttribute="top" constant="20" id="sAX-x4-8n2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.12549019607843137" green="0.12941176470588234" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="URe-Bq-l4V" firstAttribute="top" secondItem="6ue-Su-j2r" secondAttribute="bottom" id="01P-8f-NKI"/>
+                            <constraint firstItem="6ue-Su-j2r" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="DHs-YH-evf"/>
+                            <constraint firstItem="URe-Bq-l4V" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="H3q-Ko-Tui"/>
+                            <constraint firstAttribute="trailing" secondItem="6ue-Su-j2r" secondAttribute="trailing" id="X7y-fR-QrH"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="URe-Bq-l4V" secondAttribute="bottom" id="evZ-Lo-MhA"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="URe-Bq-l4V" secondAttribute="trailing" id="iFp-1K-HZY"/>
+                            <constraint firstItem="6ue-Su-j2r" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="pQl-zG-YdC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="header" destination="6ue-Su-j2r" id="oXB-hd-FUA"/>
+                        <outlet property="tableMovie" destination="3ic-h3-7xi" id="mMh-sf-7w2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.74045801526717" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+</document>
